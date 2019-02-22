@@ -17,6 +17,10 @@ export default class Content extends Component {
   }
 
   componentDidMount() {
+    this.setState({
+      tabs: tabData,
+      cards: cardData
+  });
     // Once the component has mounted, get the data and reflect that data on the state.
   }
 
@@ -48,7 +52,11 @@ export default class Content extends Component {
           `selectedTab` that includes the currently selected tab
           and `selectTabHandler` that includes the function to change the selected tab
         */}
-        <Tabs tabs={this.state.tabs} />
+        <Tabs
+          tabs={this.state.tabs}
+          selectedTab={this.state.selected}
+          selectTabHandler={this.selectTabHandler}
+        />
         <Cards cards={this.filterCards()} />
       </div>
     );
