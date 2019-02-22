@@ -34,16 +34,19 @@ const TopBarSection = styled.div`
   display: flex;
   align-items: center;
   flex-direction: row;
+
   ${props => (props.type === 'left' ? `
     justify-content: none;
     flex: 1;
     font-size: 11px;
   ` : null)}
+
   ${props => (props.type === 'center' ? `
   justify-content: center;
   flex: 3;
   font-size: 9px;
   ` : null)}
+
   ${props => (props.type === 'right' ? `
   justify-content: flex-end;
   flex: 1;
@@ -53,16 +56,20 @@ const TopBarSection = styled.div`
 `;
 
 const TopBarSpan = styled.span`
-  cursor: pointer
+  cursor: pointer;
+
   ${props => (props.type === 'left' ? `
     margin-right: 25%;
     font-weight: bold;
   ` : null)}
+
   ${props => (props.type === 'center' ? `
     margin-right: 5%;
+
     &:last-child{
       margin-right: 0;
     }
+    
     :hover{
       text-decoration: underline;
     }
