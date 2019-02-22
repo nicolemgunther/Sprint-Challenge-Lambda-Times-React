@@ -14,7 +14,7 @@ The React Lifecycle has a few phases:
 
 - [ ] Explain the details of a Higher Order Component?
 
-Higher Order Components (HOC) are React patterns that allow the programmer to reuse component logic. A HOC is basically a function that will receive a component as an argument, and will return a new component source. This allows for shared functionality between components and helps with keeping the code DRY. It can also be used as a container for other coponents, and can conditionally render a component based on a variable (e.g. showing a login page [logged out] versus a posts page [logged in] on a social media website).
+Higher Order Components (HOC) are React patterns that allow the programmer to reuse component logic. A HOC is basically a function that will receive a component as an argument, and will return a new component source. This allows for shared functionality between components and helps with keeping the code DRY. It can also be used as a container for other components, and can conditionally render a component based on a variable (e.g. showing a login page [logged out] versus a posts page [logged in] on a social media website).
 
 - [ ] What are three different ways to style components in React? Explain some of the benefits of each.
 
@@ -24,4 +24,4 @@ Three different ways to style components in React are:
 
 -Reactstrap/Bootstrap- What is nice about using Reactstrap/Bootstrap is that there are some pre-built components that have already been styled using the Bootstrap styling library. The programmer gets a chance to use the Bootstrap styling library for built-in styled classes, and also interactive styled components that can be used for interactivity throughout the react application.
 
--styled-components- Is CSS written in JavaScript, which can be beneficial because the CSS for the corresponding JS is in the same file, and prevents excessive amounts of files in a project folder. It is also nice to have more semantic tags in our components.
+-styled-components- It is CSS written in JavaScript, which can be beneficial because the CSS for the corresponding JS is in the same file, and prevents excessive amounts of files in a project folder. It is also nice to have more semantic tags in our components. Lastly, it can use indentation syntax which is convenient for things such as &:last-child, :hover, and media queries.
